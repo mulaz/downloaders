@@ -10,6 +10,7 @@ $url=~/http:\/\/ask\.fm\/[^\/]+\/answer\/(\d+)/;
 $filename=$1;
 
 $html=get($url);
+#$html=`curl $url`;
 
 #print $html;
 
