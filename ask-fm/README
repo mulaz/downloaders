@@ -4,6 +4,6 @@ usage:
 
 perl ask-fm-video-downloader.pl http://ask.fm/username/answer/12345678
 
-outputs command ro run:
+outputs command to run:
 
 rtmpdump -r rtmp://1a2b3c.cloudfront.net/cfx/st/123(456/789/p_video_answer_123456 > answer-12345678.flv
