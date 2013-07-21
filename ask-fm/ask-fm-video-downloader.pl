@@ -1,8 +1,6 @@
 #!/usr/bin/perl
-
-
 use Data::Dumper;
-use LWP::Simple;
+use LWP::Simple; 
 
 $url=$ARGV[0];
 
