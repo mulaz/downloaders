@@ -17,9 +17,10 @@ $html=~ /App.rtmp_server = '(rtmp:\/\/[^']+?)';/s;
 $rtmpserver=$1;
 
 
-$html=~/VideoAnswer.flipVideoAnswer\(this, &quot;([^&]+?)&quot;, &quot;Play again/;
+$html=~/VideoAnswer.flipVideoAnswer\(this, &quot;([^&]+?)&quot;, &quot;/;
 $video=$1;
 
 
-print "rtmpdump -r $rtmpserver/$video > answer-$filename.flv\n";
+print "rtmpdump -r $rtmpserver/$video -o answer-$filename.flv\n";
 
+#`rtmpdump -r $rtmpserver/$video -o answer-$filename.flv`;
