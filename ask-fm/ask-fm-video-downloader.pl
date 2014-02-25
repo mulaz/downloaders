@@ -21,6 +21,6 @@ $html=~/VideoAnswer.flipVideoAnswer\(this, &quot;([^&]+?)&quot;, &quot;/;
 $video=$1;
 
 
-print "rtmpdump -r $rtmpserver/$video -o answer-$filename.flv\n";
+print "rtmpdump -r $rtmpserver/$video -y $video -o answer-$filename.flv\n";
 
 #`rtmpdump -r $rtmpserver/$video -o answer-$filename.flv`;
